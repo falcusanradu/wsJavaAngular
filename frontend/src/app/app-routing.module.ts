@@ -6,7 +6,7 @@ import {LogInComponent} from './pages/log-in/log-in.component';
 const routes: Routes = [
   //TODO: AuthGuard
   {
-    path: '', redirectTo: 'home', pathMatch: 'full'
+    path: '', redirectTo: 'login', pathMatch: 'full'
   },
   {
     path: 'home', component: HomeComponent

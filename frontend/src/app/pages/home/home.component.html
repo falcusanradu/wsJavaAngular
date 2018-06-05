@@ -1,11 +1,11 @@
+<div *ngIf="notificationTimer">
+  something happened
+</div>
+
 <div style="text-align:center; margin-top: 150px;">
-
   <h1 style="font-size: 4em;">
-
     Notifications : <span style="color: red;">+{{ notifications }}</span>
-
   </h1>
-
 </div>
 
 <button (click)="callWebSocket()">call websocket from backend</button>
