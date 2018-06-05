@@ -1,0 +1,29 @@
+<div class="row">
+  <!--left-->
+  <div class="col-xs-12 col-sm-6">
+    <form *ngIf="!loading">
+      <div class="form-group">
+        <legend class="">Login</legend>
+        <label for="loginUsername">Username</label>
+        <input class="form-control" id="loginUsername" placeholder="Username" name="username"
+               [(ngModel)]="loginUsername">
+      </div>
+      <div class="form-group">
+        <label for="loginPassword">Password</label>
+        <input type="password" class="form-control" id="loginPassword" name="password" placeholder="Password"
+               [(ngModel)]="LoginPassword">
+      </div>
+      <div *ngIf="errorMessageLogin" class="alert-danger alert">{{errorMessageLogin}}</div>
+      <div class="text-left">
+        <span type="submit" class="btn btn-primary" (click)="login()"><span
+          class="fa fa-user-circle-o"></span> Login</span>
+      </div>
+    </form>
+    <div class="loading" *ngIf="loading">
+      Loading ...
+    </div>
+  </div>
+  <div class="col-xs-12 col-sm-6">
+
+  </div>
+</div>
